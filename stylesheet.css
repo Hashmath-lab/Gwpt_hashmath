@@ -1,0 +1,107 @@
+body 
+{
+  margin: 0 auto;
+  font-family: Aril, san-serif;
+  background: #447fc2;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.Pricing
+ {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:20px;
+}
+
+.container{
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(14, 17, 20, 0.1);
+  color: #007BFF;
+  padding: 20px;
+  text-align: center;
+  position:relative;
+  align-content: space-evenly;
+  width: 300px;
+  transition:ease;
+}
+
+.container:hover
+ {
+  transform: scale(1.05);
+}
+
+.container img
+{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container h2
+{
+  font-size: 32px;
+  color: #2e2929;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.container ul
+{
+  list-style: none;
+  margin: 15px;
+  padding:0;
+}
+
+.container ul li
+{
+    color:#007BFF;
+    margin: 5px 0;
+    font-size:300;
+    text-transform:uppercase;
+}
+ .container h3
+ {
+  font-size: 32px;
+  color:#007BFF;
+  margin-bottom: 20px ;
+}
+
+.container button
+{
+  background: #fff;
+  color:#458fdf;
+  border: 2px solid #8fc4fd;
+  padding: 20px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight:bold;
+}
+
+ .container:nth-child(2) button
+  { 
+    background: #fafbfc;
+    color: #2485c5;
+ }
+.container button:hover
+{
+  background: #007BFF;
+}
+.pricing-button:focus {
+  background-color: #3991dd;
+}
+
+
+@media (max-width:960px) and (min-width:960px)
+{
+    .Pricing
+    {
+    flex-direction:column;
+    align-items:center;
+    }
+    .container
+     {width: 90px;}
+   }
